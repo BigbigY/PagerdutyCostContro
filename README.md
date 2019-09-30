@@ -63,7 +63,7 @@ git clone https://github.com/BigbigY/PagerdutyCostContro.git
 - 处理程序main(编译时二进制名称)
 - 上传程序包
 
-#### 配置环境变量
+#### 配置环境变量（Pagerduty）
 获取ID接口：https://api-reference.pagerduty.com/#!/Users/get_users_id_contact_methods
 ![avatar](lambda/img/环境变量.png)
 
