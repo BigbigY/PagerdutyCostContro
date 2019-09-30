@@ -58,7 +58,7 @@ git clone https://github.com/BigbigY/PagerdutyCostContro.git
 ```
 
 #### 创建Aws Lambda
-
+![avatar](lambda/img/配置.png)
 运行时Go1.x
 处理程序main(编译时二进制名称)
 上传程序包
