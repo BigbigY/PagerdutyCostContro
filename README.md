@@ -63,19 +63,11 @@ git clone https://github.com/BigbigY/PagerdutyCostContro.git
 - 处理程序main(编译时二进制名称)
 - 上传程序包
 
-
-## 四、配置说明
-![avatar](lambda/img/配置.png)
-在Bio中配置要轮值的联系人手机号，使用`,`分割
-
-
-
-## 6、配置环境变量
-
+#### 配置环境变量
 获取ID接口：https://api-reference.pagerduty.com/#!/Users/get_users_id_contact_methods
+![avatar](lambda/img/环境变量.png)
 
-
-## 7、CloudWatch创建定时任务及绑定到要应用的Lambda
+#### 创建cloudwatch触发器
 
 | 频率                  | 表达式   |
 |------------------------------- | ------------ |
@@ -86,16 +78,22 @@ git clone https://github.com/BigbigY/PagerdutyCostContro.git
 | 工作日早上 8:00 到下午 5:55 期间每隔 5 分钟              | cron(0/5 8-17 ? * MON-FRI *)    |
 |  每月第一个星期一早上 9:00    | cron(0 9 ? * 2#1 *)         |
 
+![avatar](lambda/img/报警规则.png)
+CloudWatch创建定时任务及绑定到要应用的Lambda
 
-
-## 8、查看执行监控指标
-
+#### 查看执行监控指标
+![avatar](lambda/img/监控.png)
 error指标红线大于0,需要去看下日志
 
-
-## 9、排错日志
-
+#### 排错日志
+![avatar](lambda/img/日志.png)
 日志文件列表，查看对应日志文件内容
+
+## 四、Pagerduty配置说明
+![avatar](lambda/img/配置.png)
+在Bio中配置要轮值的联系人手机号，使用`,`分割
+
+
 
 
 
