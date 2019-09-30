@@ -58,13 +58,14 @@ git clone https://github.com/BigbigY/PagerdutyCostContro.git
 ```
 
 #### 创建Aws Lambda
-![avatar](lambda/img/配置.png)
-运行时Go1.x
-处理程序main(编译时二进制名称)
-上传程序包
+![avatar](lambda/img/函数代码.png)
+- 运行时Go1.x
+- 处理程序main(编译时二进制名称)
+- 上传程序包
 
 
 ## 四、配置说明
+![avatar](lambda/img/配置.png)
 在Bio中配置要轮值的联系人手机号，使用`,`分割
 
 
