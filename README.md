@@ -12,8 +12,40 @@ pagerduty每个账户每个月70美元，为了节省用户成本，只需要使
 - 配置简单，灵活
 - 部署在Aws Lambda服务，无需服务器支持
 
-## 3、部署
+## 3、部署方式
 host：部署到主机
+
+
+dowload
+```
+git clone https://github.com/BigbigY/PagerdutyCostContro.git
+
+```
+
+Build
+```
+cd host
+GOOS=linux GOARCH=amd64 go build main.go
+```
+
+help
+```
+./PagerdutyCostContro -h
+  -authtoken string
+        Pagerduty token (default "B3T9zaAaaAAE_bDn7u3")
+  -phoneid string
+        Pagerduty contact Phone ID (default "P2CHQID")
+  -smsid string
+        Pagerduty contact Sms ID (default "P925PL3")
+  -userid string
+        Pagerduty user ID (default "PY1KOA3")
+```
+
+start
+```
+./PagerdutyCostContro -authtoken="AUTHTOKEN" -userid="USERID" -phoneid="PHONEID" -smsid="SMSID"
+```
+
 Lambda：部署到AWS Lambda
 
 
@@ -46,12 +78,12 @@ Lambda：部署到AWS Lambda
 
 
 
-# 8、查看执行监控指标
+## 8、查看执行监控指标
 
 error指标红线大于0,需要去看下日志
 
 
-# 9、排错日志
+## 9、排错日志
 
 日志文件列表，查看对应日志文件内容
 
