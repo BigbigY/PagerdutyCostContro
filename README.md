@@ -52,6 +52,7 @@ git clone https://github.com/BigbigY/PagerdutyCostContro.git
 
 使用 go get 下载适用于 Go 的 Lambda 库，并编译您的可执行文件,压缩zip包
 ```
+➜ cd changeUserPhone/lambda
 ➜ go get github.com/aws/aws-lambda-go/lambda
 ➜ GOOS=linux go build main.go
 ➜ zip function.zip main
